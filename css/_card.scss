@@ -1,14 +1,14 @@
 .card{
     width: 500px;
-    background-color: $color-card;
+    background-color: $color-primary;
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.3);
     border-radius: 15px;
     margin: $spacing;
     text-align: center;
 
     &__title{
-        margin: 20px;
-        color: $secondary-color;
+        margin: $spacing;
+        color: $color-secondary;
         font-size: 30px;
         font-weight: bold;
     }
@@ -18,7 +18,7 @@
     }
 
     &__subtitle{
-        color: $secondary-color;
+        color: $color-secondary;
         font-weight: lighter;
         margin: $spacing 0;
         font-size: 30px;
@@ -31,7 +31,7 @@
     }
 
     &__description{
-        color: $color-des;
+        color: $color-alternative;
         font-weight: lighter;
         text-align: justify;
     }
@@ -42,34 +42,34 @@
     }
 
     &__button{
-        color: $secondary-color;
+        color: $color-secondary;
         background-color: $color-primary;
-        border: 1px solid $secondary-color;
+        border: 1px solid $color-secondary;
         border-radius: 30px;
         padding: 15px;
         font-size: 15px;
 
         &:hover{
-            background-color: black;
-            color: white;
+            background-color: $color-secondary;
+            color: $color-primary;
         }
     }
 
     &--reverse{
-        background-color: black;
+        background-color: $color-secondary;
 
         .card__title,  .card__subtitle{
-            color: white;
+            color: $color-primary;
         }
 
         .card__button{
-            background-color: black;
-            color: white;
-            border: 1px solid white;
+            background-color: $color-secondary;
+            color: $color-primary;
+            border: 1px solid $color-primary;
 
             &:hover{
-                background-color: white;
-                color: black;
+                background-color: $color-primary;
+                color: $color-secondary;
             }
         }
     }
