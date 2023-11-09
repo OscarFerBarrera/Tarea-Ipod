@@ -1,0 +1,76 @@
+.card{
+    width: 500px;
+    background-color: $color-card;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin: $spacing;
+    text-align: center;
+
+    &__title{
+        margin: 20px;
+        color: $secondary-color;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &__image{
+        width: 40%;
+    }
+
+    &__subtitle{
+        color: $secondary-color;
+        font-weight: lighter;
+        margin: $spacing 0;
+        font-size: 30px;
+        text-align: start;
+
+    }
+
+    &__body{
+        padding: $spacing;
+    }
+
+    &__description{
+        color: $color-des;
+        font-weight: lighter;
+        text-align: justify;
+    }
+
+    &__footer{
+        padding: $spacing;
+        @include flexible;
+    }
+
+    &__button{
+        color: $secondary-color;
+        background-color: $color-primary;
+        border: 1px solid $secondary-color;
+        border-radius: 30px;
+        padding: 15px;
+        font-size: 15px;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    &--reverse{
+        background-color: black;
+
+        .card__title,  .card__subtitle{
+            color: white;
+        }
+
+        .card__button{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
